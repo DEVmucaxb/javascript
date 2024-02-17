@@ -11,10 +11,20 @@ function adicionar_na_lista() {
     if (numero < 1 || numero > 100) {
         //Verifica se o numero do input é menor do que 0 ou maior que 100
         window.alert('Digite um número entre 1 e 100');
+
+        //Complementando o código (depois de pronto)...
+        document.getElementById('n1').value = ''; //Esvazia o input
+        document.getElementById('n1').focus(); //põe o cursor no input
+
     } else {
         //Verifica se o numero do input já esta na lista
         if (lista.includes(numero)) { // A sintaxe "if (numero in lista)" { está errada!
             window.alert(`O número ${numero} já está presente na lista, por favor, digite outro`);
+
+            //Complementando o código (depois de pronto)...
+            document.getElementById('n1').value = ''; //Esvazia o input
+            document.getElementById('n1').focus(); //põe o cursor no input
+
         } else {
             //Adiciona o numero do input na lista e o exibi na tela
             lista.push(numero);
@@ -22,6 +32,11 @@ function adicionar_na_lista() {
             option_numero_lista.text = `Valor ${numero} adicionado`;
             select.appendChild(option_numero_lista);
             console.log(lista);
+
+            //Complementando o código (depois de pronto)...
+            document.getElementById('n1').value = ''; //Esvazia o input
+            document.getElementById('n1').focus(); //põe o cursor no input
+
         };
     };
 };
